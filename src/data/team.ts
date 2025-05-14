@@ -45,7 +45,7 @@ export const teamMembers: TeamMember[] = [
     linkedin: "https://linkedin.com/in/nileshkanti"
   },
   {
-    name: "Harsh Singh",
+    name: "Harsh Sharma",
     role: "Treasurer",
     bio: "Handles all club finances, budgeting, and resource planning with precision and responsibility.",
     photo: "/Harsh.jpg",
@@ -54,7 +54,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: "Aditya Pratap Singh",
-    role: "Membership Chair>",
+    role: "Membership Chair",
     bio: "AI enthusiast with practical experience in Machine Learning and Deep Learning, focusing on building intelligent, data-driven systems that solve real-world problems.",
     photo: "/Aditya.jpg",
     email: "",

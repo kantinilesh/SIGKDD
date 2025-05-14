@@ -76,7 +76,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Location</h4>
                     <p className="text-gray-300">Department of Data Science and Business System</p>
-                    <p className="text-gray-300">University Building, SRM KTR</p>
+                    <p className="text-gray-300">Tech Park 2, SRM KTR</p>
           
                   </div>
                 </div>

@@ -61,7 +61,7 @@ const About = () => {
               
               <ul className="space-y-4">
                 {[
-                  "Founded in 2023 with a focus on interdisciplinary data science",
+                  "Founded in 2024 with a focus on interdisciplinary data science",
                   "Regular workshops, seminars, and hands-on sessions",
                   "Connections with leading companies in the tech industry",
                   "Opportunities to participate in online hackerrank challenges",

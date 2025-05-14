@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Database } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = (sectionId) => {
     setIsOpen(false);
     const element = document.getElementById(sectionId);
     if (element) {
@@ -33,10 +33,11 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <div className="flex items-center gap-2">
-                
+          <div className="flex items-center gap-3">
+            <div className="flex-shrink-0 flex items-center gap-2">
+              <img src="/logo1.jpg" alt="Logo 1" className="h-8 w-8" />
+              <img src="/logo2.png" alt="Logo 2" className="h-8 w-8" />
+              <div className="flex flex-col">
                 <span className="text-xl font-bold">ACM SIGKDD</span>
                 <span className="text-xs bg-blue-500 px-2 py-0.5 rounded-md uppercase font-semibold tracking-wider">
                   Student Chapter
@@ -44,7 +45,6 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
               {['about', 'events', 'team', 'resources', 'contact'].map((item) => (
@@ -64,7 +64,6 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-          
           <div className="md:hidden">
             <button 
               onClick={toggleMenu}
@@ -75,8 +74,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
-      {/* Mobile menu */}
       <div 
         className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${
           isOpen ? 'max-h-96' : 'max-h-0'
