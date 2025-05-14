@@ -86,7 +86,7 @@ const Footer = () => {
           </p>
           
           <p className="text-gray-400 text-sm flex items-center mt-4 md:mt-0">
-            Made with <Heart size={14} className="mx-1 text-red-500" /> by the ACM SIGKDD Student Chapter Team
+            Made with <Heart size={14} className="mx-1 text-red-500" /> by Nilesh Kanti - Webmaster 
           </p>
         </div>
       </div>
