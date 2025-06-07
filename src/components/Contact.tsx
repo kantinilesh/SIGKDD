@@ -87,20 +87,28 @@ const Contact = () => {
               <div className="mt-10">
                 <h4 className="font-semibold mb-4">Connect With Us</h4>
                 <div className="flex gap-4">
-                  {['facebook', 'twitter', 'instagram', 'linkedin', 'github'].map((platform) => (
-                    <a 
-                      key={platform}
-                      href="#"
-                      className="bg-gray-700 hover:bg-gray-600 w-10 h-10 rounded-full flex items-center justify-center transition-colors"
-                      aria-label={`Follow us on ${platform}`}
+                  {[
+                   { platform: 'twitter', url: 'https://x.com/srmsigkdd' },
+                   { platform: 'instagram', url: 'https://www.instagram.com/srm_acm_sigkdd/' },
+                   { platform: 'linkedin', url: 'https://www.linkedin.com/company/srmsigkdd/posts/?feedView=all' },
+                   { platform: 'github', url: 'https://github.com/acmsigkdd' }
+                   ].map(({ platform, url }) => (
+                   <a 
+                    key={platform}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-700 hover:bg-gray-600 w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+                    aria-label={`Follow us on ${platform}`}
                     >
-                      <img
-                        src={`https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/${platform}.svg`}
-                        alt={platform}
-                        className="w-5 h-5 invert opacity-75"
-                      />
+                    <img
+                    src={`https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/${platform}.svg`}
+                    alt={platform}
+                    className="w-5 h-5 invert opacity-75"
+                    />
                     </a>
-                  ))}
+                    ))}
+
                 </div>
               </div>
             </div>
