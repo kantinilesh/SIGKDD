@@ -17,40 +17,6 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
-          
-          <div className="order-1 md:order-2 relative">
-            <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-purple-600/20 rounded-2xl blur-3xl opacity-50"></div>
-            <div className="relative bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700 overflow-hidden shadow-xl">
-              <div className="mb-6">
-                <h3 className="text-2xl font-bold mb-2">Chapter Highlights</h3>
-                <p className="text-gray-400">What makes our student chapter unique</p>
-              </div>
-              
-              <ul className="space-y-4">
-                {[
-                  "Founded in 2023 with a focus on interdisciplinary data science",
-                  "Regular workshops, seminars, and hands-on sessions",
-                  "Connections with leading companies in the tech industry",
-                  "Opportunities to participate in online hackerrank challenges",
-                  "Mentorship programs with experienced data scientists",
-                  "Access to exclusive resources and learning materials"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center gap-3">
-                    <div className="h-2 w-2 rounded-full bg-blue-500"></div>
-                    <span className="text-gray-300">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              <div className="mt-8 p-4 bg-gray-800/50 rounded-lg border border-gray-700">
-                <p className="text-sm text-gray-300 italic">
-                  "Our chapter provides a platform for students to explore the fascinating world of data science, build meaningful connections, and develop skills that will shape the future of technology."
-                </p>
-                <p className="text-sm text-blue-400 mt-2">— ADITYA VERMA, Founder</p>
-              </div>
-            </div>
-          </div>
-
           <div className="order-1 md:order-2 relative">
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-purple-600/20 rounded-2xl blur-3xl opacity-50"></div>
             <div className="relative bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700 overflow-hidden shadow-xl">
@@ -83,6 +49,7 @@ const About = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

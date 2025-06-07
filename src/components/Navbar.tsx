@@ -35,8 +35,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
             <div className="flex-shrink-0 flex items-center gap-2">
-              <img src="/logo1.jpg" alt="Logo 1" className="h-8 w-8" />
-              <img src="/logo2.png" alt="Logo 2" className="h-8 w-8" />
+              <img src="/logo1.png" alt="Logo 1" className="h-12 w-12" />
+              <img src="/logo2.png" alt="Logo 2" className="h-20 w-20" />
               <div className="flex flex-col">
                 <span className="text-xl font-bold">ACM SIGKDD</span>
                 <span className="text-xs bg-blue-500 px-2 py-0.5 rounded-md uppercase font-semibold tracking-wider">

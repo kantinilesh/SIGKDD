@@ -1,6 +1,13 @@
 import React from 'react';
 import { Database, Heart } from 'lucide-react';
 
+const socialLinks = {
+  twitter: "https://x.com/srmsigkdd",
+  instagram: "https://www.instagram.com/srm_acm_sigkdd/",
+  linkedin: "https://www.linkedin.com/company/srmsigkdd/posts/?feedView=all",
+  github: "https://github.com/acmsigkdd"
+};
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900/90 border-t border-gray-800">
@@ -15,10 +22,12 @@ const Footer = () => {
               Student Chapter dedicated to knowledge discovery and data mining.
             </p>
             <div className="mt-4 flex gap-4">
-              {['facebook', 'twitter', 'instagram', 'linkedin', 'github'].map((platform) => (
+              {['twitter', 'instagram', 'linkedin', 'github'].map((platform) => (
                 <a 
                   key={platform}
-                  href="#"
+                  href={socialLinks[platform]}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
                   aria-label={`Follow us on ${platform}`}
                 >
@@ -86,7 +95,7 @@ const Footer = () => {
           </p>
           
           <p className="text-gray-400 text-sm flex items-center mt-4 md:mt-0">
-            Made with <Heart size={14} className="mx-1 text-red-500" /> by Nilesh Kanti - Webmaster 
+            Made with <Heart size={14} className="mx-1 text-red-500" /> by Nilesh Kanti - Webmaster & Ishan Goel - Web Dev Head
           </p>
         </div>
       </div>
