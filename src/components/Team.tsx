@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { teamMembers } from '../data/team';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Team = () => {
+  const [selectedCategory, setSelectedCategory] = useState<'board' | 'head' | 'lead'>('board');
+
+  const filteredMembers = teamMembers.filter(member => member.category === selectedCategory);
+
   return (
     <section id="team" className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
@@ -16,8 +20,26 @@ const Team = () => {
           </p>
         </div>
 
+        {/* Category Switcher */}
+        <div className="flex justify-center mb-10 gap-4">
+          {['board', 'head', 'lead'].map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setSelectedCategory(cat as 'board' | 'head' | 'lead')}
+              className={`px-4 py-2 rounded-lg font-medium transition-all ${
+                selectedCategory === cat
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+              }`}
+            >
+              {cat === 'board' ? 'Board' : cat === 'head' ? 'Heads' : 'Leads'}
+            </button>
+          ))}
+        </div>
+
+        {/* Team Members */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {teamMembers.map((member, index) => (
+          {filteredMembers.map((member, index) => (
             <div 
               key={index}
               className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:shadow-xl hover:shadow-blue-900/10 transition-all hover:-translate-y-1 group"
@@ -61,19 +83,21 @@ const Team = () => {
                     </a>
                   )}
                   
-                  <a 
-                    href={`mailto:${member.email}`}
-                    className="p-2 bg-gray-700 hover:bg-gray-600 rounded-full transition-colors"
-                    aria-label={`Email ${member.name}`}
-                  >
-                    <Mail size={16} />
-                  </a>
+                  {member.email && (
+                    <a 
+                      href={`mailto:${member.email}`}
+                      className="p-2 bg-gray-700 hover:bg-gray-600 rounded-full transition-colors"
+                      aria-label={`Email ${member.name}`}
+                    >
+                      <Mail size={16} />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
           ))}
         </div>
-        
+
         <div className="mt-16 text-center">
           <p className="text-gray-300 mb-6">
             Interested in joining our leadership team? We're always looking for passionate individuals to help grow our chapter.
