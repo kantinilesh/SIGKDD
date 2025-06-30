@@ -5,7 +5,7 @@ const socialLinks = {
   twitter: "https://x.com/srmsigkdd",
   instagram: "https://www.instagram.com/srm_acm_sigkdd/",
   linkedin: "https://www.linkedin.com/company/srmsigkdd/posts/?feedView=all",
-  github: "https://github.com/acmsigkdd"
+  github: "https://github.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER"
 };
 
 const Footer = () => {
