@@ -91,7 +91,7 @@ const Contact = () => {
                    { platform: 'twitter', url: 'https://x.com/srmsigkdd' },
                    { platform: 'instagram', url: 'https://www.instagram.com/srm_acm_sigkdd/' },
                    { platform: 'linkedin', url: 'https://www.linkedin.com/company/srmsigkdd/posts/?feedView=all' },
-                   { platform: 'github', url: 'https://github.com/acmsigkdd' }
+                   { platform: 'github', url: 'https://github.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER' }
                    ].map(({ platform, url }) => (
                    <a 
                     key={platform}

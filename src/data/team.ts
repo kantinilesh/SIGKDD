@@ -18,7 +18,7 @@ export const teamMembers: TeamMember[] = [
     photo: "/Srijan.jpg",
     email: "",
     github: "https://github.com",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/srijan-sarkar-90177b288/",
     category: "board"
   },
   {
@@ -28,7 +28,7 @@ export const teamMembers: TeamMember[] = [
     photo: "/Saakshi.jpg",
     email: "",
     github: "https://github.com",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/saakshi-pandey/",
     category: "board"
   },
   {
@@ -37,7 +37,7 @@ export const teamMembers: TeamMember[] = [
     bio: "Undergraduate with a passion for data visualization and communicating insights through storytelling.",
     photo: "/jordy.jpg",
     email: "",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/priyanshu-singh-560b16253/",
     category: "board"
   },
     {
@@ -57,6 +57,7 @@ export const teamMembers: TeamMember[] = [
   photo: "/Harsh.jpg",
   email: "",
   github: "https://github.com",
+  linkedin: "https://www.linkedin.com/in/harsh-sharma-99a73824b/",
   category: "board"
 },
 {
@@ -65,7 +66,7 @@ export const teamMembers: TeamMember[] = [
   bio: "AI enthusiast with practical experience in Machine Learning and Deep Learning, focusing on building intelligent, data-driven systems that solve real-world problems.",
   photo: "/Aditya.jpg",
   email: "",
-  linkedin: "https://linkedin.com",
+  linkedin: "https://www.linkedin.com/in/aditya-singhpratapsingh8a4a62287/",
   category: "board" 
 },
 
