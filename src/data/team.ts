@@ -114,7 +114,7 @@ export const teamMembers: TeamMember[] = [
 
   // --- Leads ---
   {
-    name: "Krish Keshab Banik",
+    name: "Krishna Keshab Banik",
     role: "R&D Lead",
     bio: "",
     photo: "/Krishna.jpg",
