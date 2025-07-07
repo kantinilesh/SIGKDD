@@ -105,7 +105,7 @@ export const teamMembers: TeamMember[] = [
     name: "Ashmit Singh",
     role: "Creatives Head",
     bio: "Breathing life into ideas — designing identities, shaping stories and leading with creativity at the core.",
-    photo: "/yash.jpg",
+    photo: "/ashmit.jpeg",
     email: "",
     github: "https://github.com/Ashmit-Singh",
     linkedin: "https://www.linkedin.com/in/ashmit-singh-085544324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
